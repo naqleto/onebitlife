@@ -40,4 +40,4 @@ const style = StyleSheet.create({
     textAlign: "center",
     marginVertical: 60,
   },
-})
+});

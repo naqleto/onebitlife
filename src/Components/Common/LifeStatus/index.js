@@ -1,5 +1,6 @@
-import React from "react";
-import { View, StyleSheet } from "react-native";
+import *as React from 'react';
+import { Animated, Platform, StyleSheet, View, ViewStyle} from "react-native";
+import { useSafeAreaFrame,  useSafeAreaInsets,} from 'react-native-safe-area-context';
 
 import Lottie from "lottie-react-native";
 
@@ -16,27 +17,23 @@ export default function LifeStatus(){
 return(
     <View style={styles.container}>
         <Lottie
-            source={require=("../../../assets/education/education-100.json")}
+            source={require("../../../assets/education/education-1.json")}
             autoPlay
             loop
             style={styles.educacaoAnimacao}
             />
-
         <Lottie
-            source={require=("../../../assets/money/money-100.json")}
+            source={require("../../../assets/money/money-100.json")}
             autoPlay
             loop
             style={styles.financasAnimacao}
             />
-
             <Lottie
-            source={require=("../../../assets/robot/robot-100-100.json")}
+            source={require("../../../assets/robot/robot-100-100.json")}
             autoPlay
             loop
             style={styles.roboAnimacao}
             />
-
-
     </View>
 );
 
